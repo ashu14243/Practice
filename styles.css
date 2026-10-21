@@ -1,0 +1,128 @@
+/*
+Challenge:
+Change the site's background into a gradient that goes
+from blue at the top to pink at the bottom.
+*/
+
+body {
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    color: #211f04;
+    background: linear-gradient(to bottom, #a2d2ff, #EFB0C9);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("images/like-hearts.gif");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center top;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#bff-img {
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 10%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid rgb(128, 73, 73);
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/5th.jpeg");
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/2nd.jpeg");
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/3rd.jpeg");
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/4th.jpeg");
+}
+
+/* #gift-img-cheers:hover {
+    background-image: url("images/chidana.gif");
+} */
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+    color: black;
+}
+
+a {
+    color: rgb(107, 84, 84);
+}
+
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
